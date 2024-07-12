@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 610px;
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: #333333;
+}
+.input-group {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px 0 0 4px;
+}
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.input-group button:hover {
+  background-color: #0056b3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li.done{
+  border-color: #0af00a;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+ul li.done .button-group button.done-action {
+  display: none;
+}
+ul li button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ul li button:hover {
+  opacity: 0.8;
+}
+
+.prioridade-1,
+select:has(option[value="1"]:is(:checked)) {
+  color: #007bff;
+}
+
+.prioridade-2,
+select:has(option[value="2"]:is(:checked)) {
+  color: #ff8c00;
+}
+
+.prioridade-3,
+select:has(option[value="3"]:is(:checked)) {
+  color: #dc3545;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th {
+  background-color: #fefefe;
+  color: #000;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+table td:first-child {
+  text-align: justify;
+}
+
+table.table-bordered {
+  border: 1px solid #cccccc;
+}
+table.table-bordered th,
+table.table-bordered td {
+  border: 1px solid #cccccc;
+}
+
+.legenda-prioridade span{
+  padding-left: 10px;
+}
+

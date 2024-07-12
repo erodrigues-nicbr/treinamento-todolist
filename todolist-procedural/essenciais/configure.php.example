@@ -1,0 +1,14 @@
+<?php 
+
+class Config{
+    protected static $config  = [
+        'host' => 'host',
+        'user' => 'user',
+        'password' => 'password',
+        'database' => 'database'
+    ];
+
+    public static function getAllConfig(){
+        return self::$config;
+    }
+}

@@ -1,0 +1,1 @@
+<a href="/">Admin</a> | <a href="/tasks/done">Done list</a> | <a href="/tasks/pend">Pend list</a>
